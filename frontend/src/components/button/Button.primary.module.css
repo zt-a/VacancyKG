@@ -1,0 +1,7 @@
+.btn_primary {
+  background-color: #186ADC;
+}
+
+.btn_primary:hover {
+  background-color: #0065D1;
+}

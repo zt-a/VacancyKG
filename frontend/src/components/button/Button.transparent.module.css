@@ -1,0 +1,16 @@
+.btn_trans {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #333;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 5%;
+  padding-left: 5%;
+  transition: all .5s;
+}
+
+.btn_trans:hover {
+  background: #333;
+  color: white;
+}
