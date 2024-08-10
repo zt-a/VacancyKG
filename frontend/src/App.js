@@ -38,7 +38,24 @@ const AppContent = () => {
     <>
       <Header navLinks={navLinks} title="VacancyKG" logo={logoHeader} />
       {currentUrl === '/' 
-        ? <Banner title="Banner" subtitle="Banner" intro={intro} content="dafsf adsfas asdf a" btn1={{name: "fasdfasd", link: "/"}} btn2={{name: "fasdfasd", link: "/"}}  />
+        ? <Banner 
+            title="Banner" 
+            subtitle="Banner" 
+            intro={intro} 
+            content="Bla bla bla bla bla" 
+            btn1={
+              {
+                name: "Blablabla", 
+                link: "/"
+              }
+            } 
+            btn2={
+              {
+                name: "Blablabla", 
+                link: "/"
+              }
+            }  
+          />
         : <BreadCrumbs url={currentUrl} />
       }
       
