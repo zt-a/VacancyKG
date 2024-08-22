@@ -78,4 +78,10 @@ export class User extends Model<UserAttributes> implements UserAttributes {
     allowNull: false,
   })
   role!: UserRole;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: true,
+  })
+  refreshToken?: string;
 }

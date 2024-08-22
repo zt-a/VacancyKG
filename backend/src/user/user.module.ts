@@ -6,6 +6,7 @@ import { User } from './models/user.models';
 import { UserProfile } from './models/user-profile.model';
 import { AuthModule } from 'src/auth/auth.module';
 import { FilesModule } from 'src/files/files.module';
+import { UserProfileController } from './user-profile.controller';
 
 @Module({
   imports: [
@@ -13,7 +14,7 @@ import { FilesModule } from 'src/files/files.module';
     forwardRef(() => AuthModule),
     FilesModule,
   ],
-  controllers: [UserController],
+  controllers: [UserController, UserProfileController],
   providers: [UserService],
   exports: [UserService],
 })
