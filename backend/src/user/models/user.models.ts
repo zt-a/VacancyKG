@@ -3,6 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { Company } from 'src/employer/models/employer.models';
 import { UserProfile } from './user-profile.model';
 import { UserAttributes, UserTypeEnum } from './user.models.interface';
+import { Exclude } from 'class-transformer';
 
 export enum UserRole {
   ADMIN = 'admin',
@@ -53,6 +54,7 @@ export class User extends Model<UserAttributes> implements UserAttributes {
     type: DataType.STRING,
     allowNull: false,
   })
+  @Exclude()
   password!: string;
 
   @ApiProperty({
@@ -85,3 +87,4 @@ export class User extends Model<UserAttributes> implements UserAttributes {
   })
   refreshToken?: string;
 }
+export { UserTypeEnum };
